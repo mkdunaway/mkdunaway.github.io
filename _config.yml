@@ -1,0 +1,9 @@
+pages:
+  script:
+  - mkdocs build
+  - mv _site public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
