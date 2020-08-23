@@ -9,7 +9,7 @@ body {margin:0;font-family: "Lato", sans-serif}
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: red;
+  background-color: lightseagreen;
   overflow: hidden;
 }
 
@@ -26,7 +26,7 @@ body {margin:0;font-family: "Lato", sans-serif}
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: black;
+  background-color: lightseagreen;
   color: black;
 }
 
@@ -75,7 +75,7 @@ body {margin:0;font-family: "Lato", sans-serif}
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: black;
   color: white;
 }
 
