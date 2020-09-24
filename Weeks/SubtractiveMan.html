@@ -14,13 +14,115 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </style>
 <body>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="https://mkdunaway.github.io/" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="Laser.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">02: Laser Cutting</a>
-    <a href="AdditiveManufacturing.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">03: Additive Manufacturing</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -44,7 +146,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Assignment: Learn how to use the Axiom CNC router.</h1>
+      <h1>Assignment: Learn how to use the Axiom CNC router... and be creative.</h1>
       <h4>DUE WEDNESDAY SEPT 30TH BY MIDNIGHT</h4>
       <h5 class="w3-padding-32">There are a few things I'd like to point out about this assignment. </h5>
         <ol>
@@ -69,42 +171,104 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div class="w3-twothird">
       <h1>Step One</h1>
         <h5>Get trained on the Axiom. You MUST watch this video before your training.</h5>
+
+        <h5>To document your training, I suggest a few things: </h5>
+        <ol>
+            <li>Go into the shop and take a few photos of important tools or buttons</li>
+            <li>Sit down in the lab on the computer with the software VCarve and take a few photos</li>
+            <li>Youtube it. Take screenshots of other people using CNCs</li>
+        </ol>
+
     <iframe width="500" height="345" src="https://www.youtube.com/embed/ZPfI3M43NAk?autoplay=1">
     </iframe>
 
       <h1>Step Two</h1>
 
-      <h5>We will be using the language HTML (short for Hypertext Markup Language) to create our webpages. In order to write the HTML, we will use a text editor called <a href="http://brackets.io/" target="_blank">Brackets</a> which you will need to download.</h5>
-    <iframe width="500" height="345" src="https://www.youtube.com/embed/k4pzgmWfC48?autoplay=1">
-    </iframe>
-
-        <h1>Step Three</h1>
-         <h5>Now we need to learn some HTML. While I have some strong suggestions, there are so many existing free resources on learning HTML that I will leave it up to you. So, here are some options:</h5>
-        <h5>Very beginner... very slow paced.</h5>
+      <h5>Like I mentioned, this is the first week where you will recieve a grade for creativity. You have been building up muscle around tools, machines, and software and now we're switching gears a bit. I want you to imagine you have a 2' by 4' piece of 3/4 inch plywood. The nice kind. Using a software of your choice, create a design to be milled. You need to include:
         <ol>
-            <li>Watch this <a href="https://generalassembly.wistia.com/medias/x8e1j7uuet" target="_blank">video</a>. The password is ga2020.</li>
-            <li>Look through <a href="https://drive.google.com/file/d/1f-03F_jkCiOQ3ZrXttlggMiBfVnN9YGr/view?usp=sharing" target="_blank">this</a> to better aquaint yourself with web dev.</li>
-        </ol>
-        <h5>Go at your own pace... great resource!</h5>
-        <il>
-            <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">W3Schools HTML Intro</a></li>
-        </il>
+          <li>A 2D drawing of how the piece of wood will be cut. You could use Illustrator or Fusion 360 for this... or another software.</li>
+          <li>Create a computer render or hand drawing of what it will look like when done</li>
+          <li>Include inspiration and research.</li>
+          <li>Assume once you cut the design, you will be doing some post process work. Include a bill of materials. Will you need wood stain? Maybe you need electronics? What will you need to finish this project to your satisfaction?</li></ol></h5>
 
 
-        <h1>Step Four</h1>
-        <h5>Now you need to build your site. You can use an html template or you can make this from scratch. For full marks this week you need these components:</h5>
-        <il>
-            <li>Home Page</li>
-            <li>About Me Page</li>
-            <li>Week One Documentation Page</li>
-            <li>Simple way to navigate from week to week</li>
-        </il>
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="/ImagesMKD/cnc1.jpg" style="width:100%">
+  <div class="text">An <a href="http://www.sinelindholm.com/work#/new-page/" target="_blank">urban gardening pavillion.</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="/ImagesMKD/cnc2.jpg" style="width:100%">
+  <div class="text">Pavillion using same kerfing technique you used on your laser cut boxes.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="/ImagesMKD/cnc4.jpg" style="width:100%">
+  <div class="text">This was created by Youtubers <a href="https://www.youtube.com/watch?v=V2X7kpcHJzI&list=PL80tRflzFAKG83o5ruavEje8TKsXTBb6Q&index=7" target="_blank">Evan & Katelyn</a> who have made a living off sharing what they make together.</div>
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="/ImagesMKD/cnc3.jpg" style="width:100%">
+  <div class="text">See video <a href="https://www.youtube.com/watch?v=mjXecrFbP84" target="_blank">here.</a></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
     </div>
   </div>
 </div>
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">May the force be with you.</h1>
+    <h1 class="w3-margin w3-xlarge">One more week until the "break"!</h1>
 </div>
 
 <!-- Footer -->
