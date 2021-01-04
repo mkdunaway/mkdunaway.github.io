@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<head><link rel="shortcut icon" href="http://mkdunaway.github.io/favicon.ico"></head>
+<html lang="en">
+<title>Intro to Digi Fab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<link rel="stylesheet" href="dropdown.css">
+
+<!-- Navbar -->
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="Students.html">Students</a>
+  <div class="dropdown">
+    <button class="dropbtn">Weekly Assignments
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Weeks/ProjectManagement.html">01: Project Management</a>
+      <a href="Weeks/Laser.html">02: Laser Cutting</a>
+      <a href="Weeks/IntroAdd.html">03: Additive Manufacturing</a>
+      <a href="Weeks/IntroCad.html">04: CAD, CAM, Plants, + Prusas</a>
+      <a href="Weeks/SubtractiveMan.html">05: Subtractive Manufacturing</a>
+      <a href="Weeks/Break.html">06: "Break"</a>
+      <a href="Weeks/Slicr.html">07: Slicer Mini</a>
+      <a href="Weeks/Slicr2.html">08: Slicer Big</a>
+      <a href="Weeks/VinylCutting.html">09: Vinyl Cutting</a>
+      <a href="Weeks/Electronics.html">10: Electronics #1</a>
+      <a href="Weeks/Electronics2.html">11: Electronics #2</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+
+
+<!-- Header -->
+<header class="w3-container w3-white w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Intro to Digi Fab</h1>
+  <p class="w3-xlarge">Welcome to our course site!</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="https://docs.google.com/document/d/18oI9FrWeIXcApKBSLHW04x8GUWz4YdgxhgcIRW873Eg/edit?usp=sharing" target="_blank">Syllabus</a></button>
+</header>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="/ImagesMKD/dalton.jpg" style="width:100%">
+  <div class="text">Dalton Adams: Week Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="/ImagesMKD/amanda2.jpg" style="width:100%">
+  <div class="text">Amanda Hodgkins: Week Seven</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="/ImagesMKD/joseph.jpg" style="width:100%">
+  <div class="text">Joseph Spelman: Week Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="/ImagesMKD/emma.jpg" style="width:100%">
+  <div class="text">Whitney O'Reardon: Week Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="/ImagesMKD/pepper.jpg" style="width:100%">
+  <div class="text">Kyra Ward: About Me</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="/ImagesMKD/tuna.jpg" style="width:100%">
+  <div class="text">Tuna Ozturk: Week Four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="/ImagesMKD/amanda.jpg" style="width:100%">
+  <div class="text">Amanda Hodgkins: Week Two</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Watch this first!</h1>
+        <iframe width="500" height="345" src="https://www.youtube.com/embed/Y62E3Ljx8Fw?autoplay=0">
+    </iframe>
+      <h5 class="w3-padding-32"></h5>
+
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge"></h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+<a data-brackets-id="1788" href="https://www.instagram.com/wheatoninnovationspaces/" target="_blank"> <i data-brackets-id="1789" class="fa fa-instagram w3-hover-opacity"> </i></a>
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
