@@ -475,8 +475,8 @@ div.moduleSquare {
 div.moduleGrid {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     flex-wrap: wrap;
 }
 
