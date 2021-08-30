@@ -2,8 +2,8 @@
 
 <html>
 <head>
-    <title>Week Five: Subtractive Manufacturing</title>
-    <link rel="stylesheet" type="text/css" href="https://mkdunaway.github.io/">
+    <title>CNC Routing</title>
+    <link rel="stylesheet" type="text/css" href="../IntroDigiFabStyle.css">
     <meta charset="utf-8"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,8 @@
     <div class="banner weekly">
         <div class="bannerTitleLogoDiv">
             <div class="bannerTitleDiv">
-                <h1 class="bannerTitle">Subtractive Manufacturing</h1>
-                <h1 class="bannerSubTitle">One more week until the "break!"</h1>
+                <h1 class="bannerTitle">CNC Routing</h1>
+                <h1 class="bannerSubTitle">Slice N' Dice!</h1>
             </div>
         </div>
         <div class="menuTop">
@@ -28,6 +28,11 @@
                 </a>
             </div>
             <div class="rightTopMenu">
+                <a class="menuLink" href="https://booking.setmore.com/scheduleappointment/97848dbe-2094-47f3-828d-edcb376f62db" target="_blank">
+                    <button class="menuButton darkBlue">
+                        Sign Up for 3D Printer Training
+                    </button>
+                </a>
                 <a class="menuLink" href="https://docs.google.com/spreadsheets/d/1aBfT-mzf-wacr5bIAQTT2y1ZVWHWfO4-LRkdX3jpQTk/edit?usp=sharing" target="_blank">
                     <button class="menuButton">
                         Assessment
@@ -51,7 +56,7 @@
                         <a href="WeeklyAssignments/Week02_LaserCutting.html">Laser Cutting</a>
                         <a href="WeeklyAssignments/Week03_AddativeManufacturing.html">FDM Printing</a>
                         <a href="WeeklyAssignments/Week04_CadCamPlantsPrusas.html">Digital Embroidery</a>
-                        <a href="WeeklyAssignments/Week07_SlicerMini.html">SLA Printing</a>
+                        <a href="WeeklyAssignments/Week07_SLA.html">SLA Printing</a>
                         <a href="WeeklyAssignments/Week06_Break.html">"Break"</a>
                         <a href="WeeklyAssignments/Week08_SlicerBig.html">Mold Making</a>    
                         <a href="WeeklyAssignments/Week10_ElectronicsOne.html">Electronics</a>
@@ -68,24 +73,16 @@
     <!-- body content has a white background -->
     <div class="bodyContent">
         <div class="bodyHeader left">
-            Assignment: Learn how to use the Axiom CNC router...and be creative.
+            Assignment: Use the laser cutter to make a 3D cardboard object.
             <div class="underline"></div>
             <div class="bodyHeader subHeader left">
-                Due Wednesday, Sept 30th by Midnight
+                Due Wednesday, Oct 14th by Midnight
             </div>
         </div>
 
         <p class="bodyParagraph">
-            There are a few things I'd like to point out about this assignment:
+            The next two weeks will be one larger more complex project. We will create a small iteration of the project this week so you get a handle on the workflow. Eventually, this project will need to be big-ish. To bring some objectivity to that statement, it will need to be at least 25" on one axis. You will need to prove that by holding up a measuring tape to it. It also must have at least 12 "slices". No more than 6 sheets of cardboard. However, this week we will create a tiny version that's only 5 or so inches on it's longesrt axis.
         </p>
-
-        <ol class="bodyNumList">
-            <li>Receiving the first Axiom training does not grant you full access to use the Axiom. Rather, it means you can begin to imagine different projects you can create using the Axiom. If you'd like to use it again, you will need to loop me in.</li>
-            <br>
-            <li>This is the first assignment where one component of your grade will be based on creativity. To some, this may seem subjective so I have linked a rubric <a class="bodyLink" href="https://docs.google.com/document/d/126iwJiyDgcbh_2FLdixoMsZaiBTUmC9bJSlEEoNsxEw/edit?usp=sharing" target="_blank">here</a> for your reference.</li>
-            <br>
-            <li>If you're curious about what type of work would recieve a 100% for this week, check out <a class="bodyLink" href="http://fabacademy.org/2019/labs/barcelona/students/josep-marti/Week07.html" target="_blank">Josep's page</a>.</li>
-        </ol>
 
     </div>
     <!-- end body content -->
@@ -102,23 +99,13 @@
                     <div class="underline small"></div>
                 </div>
 
-                <p class="bodyParagraph">
-                    Get trained on the Axiom. You MUST watch this video before your training.
-                    <br><br>
-                    To document your training, I suggest a few things:
+                <p class="bodySubParagraph">
+                    Model a thing. Fusion 360... Tinkercad... Blender...
                 </p>
-
-                <ol class="bodyNumList">
-                    <li>Go into the shop and take a few photos of important tools or buttons</li>
-                    <br>
-                    <li>Sit down in the lab on the computer with the software VCarve and take a few photos</li>
-                    <br>
-                    <li>Youtube it. Take screenshots of other people using CNCs</li>
-                </ol>
 
                 <div class="videoDiv">
                     <iframe
-                    src="https://www.youtube.com/embed/ZPfI3M43NAk"
+                    src="https://www.youtube.com/embed/XZMeQtuhwQo"
                     allow="fullscreen">
                     </iframe>
                 </div>
@@ -131,59 +118,66 @@
                 </div>
 
                 <p class="bodyParagraph">
-                    Like I mentioned, this is the first week where you will recieve a grade for creativity. You have been building up muscle around tools, machines, and software and now we're switching gears a bit. I want you to imagine you have a 2' by 4' piece of 3/4 inch plywood. The nice kind. Using a software of your choice, create a design to <b>hypothetically</b> create. You need to include:
+                    Import into Slicer.
                 </p>
 
-                <ol class="bodyNumList">
-                    <li>A 2D drawing of how the piece of wood will be cut. You could use Illustrator or Fusion 360 for this... or another software.</li>
-                    <br>
-                    <li>Create a computer render or hand drawing of what it will look like when done</li>
-                    <br>
-                    <li>Include inspiration and research.</li>
-                    <br>
-                    <li>Assume once you cut the design, you will be doing some post process work. Include a bill of materials. Will you need wood stain? Maybe you need electronics? What will you need to finish this project to your satisfaction?</li>
-                </ol>
-
-                <p class="bodySubParagraph">
-                    For a detailed description of an awesome CNC router project, check out <a class="bodyLink" href="https://www.evilmadscientist.com/2012/cnc-workstation/" target="_blank">workstation</a>. Also, check out <a class="bodyLink" href="https://www.opendesk.cc/" target="_blank">Opendesk</a> which is actually company started by FabAcademy graduates. In addition, I have added some inspirational photos below. Hover over each for a little more info.
-                </p>
-
-                <div class="photoCollage">
-                    <div class="photoDiv">
-                        <img class="collagePhoto" src="../IntroDigiFabImages/cnc1.jpg">
-                        <div class="collageOverlay">
-                            <div class="collageTextDiv">
-                                An <a class="bodyLink" href="http://www.sinelindholm.com/work#/new-page/" target="_blank">urban gardening pavillion</a>.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photoDiv">
-                        <img class="collagePhoto" src="../IntroDigiFabImages/cnc2.jpg">
-                        <div class="collageOverlay">
-                            <div class="collageTextDiv">
-                                Pavillion using same kerfing technique you used on your laser cut boxes.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photoDiv">
-                        <img class="collagePhoto" src="../IntroDigiFabImages/cnc3.jpg">
-                        <div class="collageOverlay">
-                            <div class="collageTextDiv">
-                                See video <a class="bodyLink" href="https://www.youtube.com/watch?v=mjXecrFbP84" target="_blank">here</a>.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="photoDiv">
-                        <img class="collagePhoto" src="../IntroDigiFabImages/cnc4.jpg">
-                        <div class="collageOverlay">
-                            <div class="collageTextDiv">
-                                This was created by Youtubers <a class="bodyLink" href="https://www.youtube.com/watch?v=V2X7kpcHJzI&list=PL80tRflzFAKG83o5ruavEje8TKsXTBb6Q&index=7" target="_blank">Evan & Katelyn</a> who have made a living off sharing what they make together.
-                            </div>
-                        </div>
-                    </div>
+                <div class="videoDiv">
+                    <iframe
+                    src="https://www.youtube.com/embed/dFmaAEScARM"
+                    allow="fullscreen">
+                    </iframe>
                 </div>
 
-                <div class="break32px"></div>
+
+
+                <p class="bodyParagraph">
+                    This is another great video. If my video doesn't make sense, I recommened you watching this one. He also uses Fusion which many of you may prefer over Tinkercad.
+                </p>
+
+                <div class="videoDiv">
+                    <iframe
+                    src="https://www.youtube.com/embed/73GTmy5oBEQ"
+                    allow="fullscreen">
+                    </iframe>
+                </div>
+
+                <div class="break64px"></div>
+
+                <div class="bodyHeader left">
+                    Step Three
+                    <div class="underline small"></div>
+                </div>
+
+                <p class="bodyParagraph">
+                    Import into Adobe Illustrator
+                </p>
+
+                <div class="videoDiv">
+                    <iframe
+                    src="https://www.youtube.com/embed/Byq2LgL38ss"
+                    allow="fullscreen">
+                    </iframe>
+                </div>
+
+                <div class="break64px"></div>
+
+                <div class="bodyHeader left">
+                    Step Four
+                    <div class="underline small"></div>
+                </div>
+
+                <p class="bodyParagraph">
+                    Time to laser cut + assemble! Remember the assembling can be tricky and I'm not going to go over that in the videos since each model with come with it's own instructions and step by step "simulation". If you want it to hold together better, use some hot glue! We have that at the lab. As always, clean up after yourself.
+                </p>
+
+                <div class="videoDiv">
+                    <iframe
+                    src="https://www.youtube.com/embed/u5n0NyNvey0"
+                    allow="fullscreen">
+                    </iframe>
+                </div>
+
+                <div class="break64px"></div>
 
             </div>
         </div>
